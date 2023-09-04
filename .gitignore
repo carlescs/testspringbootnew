@@ -37,3 +37,4 @@ out/
 .vscode/
 
 application.properties
+spring-boot-h2-db.mv.db
