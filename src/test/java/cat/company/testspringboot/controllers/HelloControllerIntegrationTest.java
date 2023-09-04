@@ -18,7 +18,7 @@ public class HelloControllerIntegrationTest {
 
     @Test
     public void getHello() throws Exception {
-        ResponseEntity<String> response = template.getForEntity("/", String.class);
+        ResponseEntity<String> response = template.getForEntity("/api/customers", String.class);
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
     }
 }
